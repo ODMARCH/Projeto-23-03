@@ -1,1 +1,112 @@
-qq
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+</header>
+       <h1> AULA 06</h1>
+</header>
+     <section>
+        <h2> videos </h2>
+        <div>
+            <h3> video html </h3>
+        
+        <video autoplay muted controls width="500" src="https://videos.rockstargames.com/v4/to78rk1o/flv/en-us-2160p.mp4">
+        </video>
+    </div>
+    <div>
+        <h3>Video Youtube</h3>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/OTerSwwxR9Y?si=TH8asiq6CMFNpyV4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>"
+    </div>
+    <!--Controls, pode pausar, voltar ele iniciar e etc-->
+</section>
+<section>
+    <h2>Tabelas</h2>
+
+    <table border="1"> <!--colocar uma borda, vai ficar vermelho msm-->
+       <thead>
+            <tr> <!--Representa uma linha na tabela-->
+                <th>nome</th> <!--celula de cabeçalho-->
+                <th>Idade</th>
+                <th colspan="2">Profissao</th>
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr>
+                <td>André</td>
+                <td rowspan="2">21</td>
+                <td>Aux ADM</td>
+                <td>Desenvolvedor</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>jogador</td>
+            </tr>
+        </tbody>
+    </table>
+
+</section>
+
+<section>
+    <h2>Formularios</h2>
+    <form method="post" action="">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome</label>
+            <input required placeholder="Escreva aqui seu nome completo" name="nome-completo" id="nome" type="text">
+            <br>
+            <label for="">Email</label>
+            <input name="email-pessoal" type="email" value="@unifebe.edu.br">
+        </fieldset>
+
+        <fieldset>
+            <legend>Seleção de Listas</legend>
+            <label for="estado">Selecione seu Estado</label>
+            <select name="estado-selecionado" id="estado">
+                <option value="SC">Santa Catarina</option>
+                <option value="PR">Paraná</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Qual o melhor periodo de estudo?</legend>
+            <input type="radio" id="manha" name="periodo-estudo">
+            <label for="manha">Manha</label>
+
+            <input type="radio" id="Tarde" name="periodo-estudo">
+            <label for="noite">Tarde</label>
+
+            <input type="radio" id="Noite" name="periodo-estudo">
+            <label for="noite">Noite</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Lista de compras</legend>
+            <input type="checkbox" id="cafe" name="cafe">
+            <label for="cafe">Café</label>
+            <br>
+            <input type="checkbox" id="acucar" name="acucar">
+            <label for="acucar">Acucar</label>
+            <br> <!--a tag BR significa Quebra de linha-->
+            <input type="checkbox" id="leite" name="leite">
+            <label for="leite">Leite</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Comentarios</legend>
+            <textarea name="comentario" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <br>
+        <button type="submit">Enviar</button>
+        <input type="reset">
+</section>
+
+</body>
+</body>
+</html>
